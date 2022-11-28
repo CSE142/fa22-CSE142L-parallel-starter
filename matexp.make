@@ -28,3 +28,6 @@ clean: matexp_clean
 
 .PHONY: autograde
 autograde: regressions.json autograde.csv
+
+
+$(BUILD)/run_tests.o: OPTIMIZE=-fopenmp
